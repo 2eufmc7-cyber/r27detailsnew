@@ -7,18 +7,19 @@
 <meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
-@font-face{font-family:"Michroma";src:url("assets/fonts/michroma-400.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url("assets/fonts/hanken-grotesk-400.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url("assets/fonts/hanken-grotesk-600.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Michroma";src:url("michroma-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("hanken-grotesk-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("hanken-grotesk-600.woff2") format("woff2");font-weight:600;font-display:swap}
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *,*::before,*::after{box-sizing:inherit}
 body{margin:0;background:#000;color:#F2F3F5;font-family:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 header{border-bottom:1px solid #1C1E21}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
 header .wrap{height:68px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:block;width:108px;aspect-ratio:709/268;background:#F2F3F5;-webkit-mask:url("assets/img/logo.png") center/contain no-repeat;mask:url("assets/img/logo.png") center/contain no-repeat}
+.brand{display:block;width:108px;line-height:0}
+.brand img{display:block;width:100%;height:auto}
 header a.back{color:#B3B8BE;text-decoration:none;font-size:15px}
 header a.back:hover{color:#F2F3F5}
 main{padding:56px 0 80px}
@@ -39,7 +40,7 @@ footer a:hover{color:#F2F3F5}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a href="./" class="brand" aria-label="R27 Details, inicio"></a><a class="back" href="./">← Volver a la web</a></div></header>
+<header><div class="wrap"><a href="./" class="brand" aria-label="R27 Details, inicio"><img src="logo.png" alt="" width="709" height="268"></a><a class="back" href="./">← Volver a la web</a></div></header>
 <main><div class="wrap">
 <h1>Política de privacidad</h1>
 <p class="upd">Última actualización: octubre de 2026</p>

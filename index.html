@@ -8,17 +8,17 @@
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://r27details.com/">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preload" href="fonts/michroma-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/hanken-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="michroma-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="hanken-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="R27 Details">
 <meta property="og:title" content="R27 Details | Detailing a domicilio en Murcia y Molina de Segura">
 <meta property="og:description" content="Pulido de faros, limpieza de motor, interior y tratamientos de cristales y cuero, en tu casa. Precios desde 30 €.">
 <meta property="og:url" content="https://r27details.com/">
-<meta property="og:image" content="https://r27details.com/img/og.jpg">
+<meta property="og:image" content="https://r27details.com/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,8 +29,8 @@
   "name":"R27 Details",
   "description":"Detailing profesional a domicilio: pulido de faros, limpieza de motor, limpieza de interior y tratamientos hidrofóbico de cristales y cerámico de cuero.",
   "url":"https://r27details.com/",
-  "image":"https://r27details.com/img/og.jpg",
-  "logo":"https://r27details.com/img/icon-512.png",
+  "image":"https://r27details.com/og.jpg",
+  "logo":"https://r27details.com/icon-512.png",
   "telephone":"+34722540936",
   "priceRange":"Desde 30 €",
   "address":{"@type":"PostalAddress","addressLocality":"Molina de Segura","addressRegion":"Murcia","addressCountry":"ES"},
@@ -41,11 +41,11 @@
 </script>
 
 <style>
-@font-face{font-family:"Michroma";src:url("fonts/michroma-400.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url("fonts/hanken-grotesk-400.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url("fonts/hanken-grotesk-500.woff2") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url("fonts/hanken-grotesk-600.woff2") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"Hanken Grotesk";src:url("fonts/hanken-grotesk-700.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Michroma";src:url("michroma-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("hanken-grotesk-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("hanken-grotesk-500.woff2") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("hanken-grotesk-600.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("hanken-grotesk-700.woff2") format("woff2");font-weight:700;font-display:swap}
 :root{
   --bg:#F3F4F5; --panel:#FFFFFF; --ink:#0A0A0A; --soft:#4F555C; --line:#D5D8DC;
   --btn:#0A0A0A; --btn-ink:#FFFFFF; --chip:#E7E9EC;
@@ -109,7 +109,8 @@ p{margin:0}
 /* Cabecera */
 .top{position:sticky;top:0;z-index:40;background:#000;color:#F2F3F5;border-bottom:1px solid #1C1E21;padding-top:env(safe-area-inset-top,0px);margin-top:calc(-1 * env(safe-area-inset-top,0px))}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
-.brand{display:block;width:108px;aspect-ratio:709/268;background:currentColor;-webkit-mask:url("assets/img/logo.png") center/contain no-repeat;mask:url("assets/img/logo.png") center/contain no-repeat}
+.brand{display:block;width:108px;line-height:0}
+.brand img{display:block;width:100%;height:auto}
 .top nav{display:flex;gap:28px;font-size:15px}
 .top nav a{text-decoration:none;color:#A2A8AF}
 .top nav a:hover{color:#F2F3F5}
@@ -120,12 +121,16 @@ p{margin:0}
 /* Hero */
 .hero{text-align:center;padding:clamp(56px,10vh,110px) 0 clamp(48px,8vh,88px);position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;left:50%;top:0;width:min(900px,120vw);height:420px;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.09),transparent 70%);pointer-events:none}
-.mark{width:min(640px,84vw);aspect-ratio:709/268;margin:0 auto;
-  background:linear-gradient(105deg,#C9CED4 0%,#C9CED4 40%,#FFFFFF 50%,#C9CED4 60%,#C9CED4 100%);background-size:320% 100%;background-position:100% 0;
-  -webkit-mask:url("assets/img/logo.png") center/contain no-repeat;mask:url("assets/img/logo.png") center/contain no-repeat;
-  animation:shine 2.4s cubic-bezier(.5,0,.2,1) .35s forwards}
+.mark{position:relative;width:min(640px,84vw);margin:0 auto;line-height:0}
+.mark img{display:block;width:100%;height:auto;opacity:.82}
+@supports ((mask-image:url("")) or (-webkit-mask-image:url(""))){
+  .mark::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(105deg,transparent 0%,transparent 40%,#fff 50%,transparent 60%,transparent 100%);background-size:320% 100%;background-position:100% 0;
+    -webkit-mask:url("logo.png") center/contain no-repeat;mask:url("logo.png") center/contain no-repeat;
+    animation:shine 2.4s cubic-bezier(.5,0,.2,1) .35s forwards}
+}
 @keyframes shine{to{background-position:0% 0}}
-@media (prefers-reduced-motion:reduce){.mark{animation:none;background:#E6E9EC}}
+@media (prefers-reduced-motion:reduce){.mark::after{display:none}.mark img{opacity:.9}}
 .hero h1{font-size:clamp(23px,4vw,44px);max-width:22ch;margin:clamp(40px,7vh,64px) auto 0}
 .hero .lead{color:var(--soft);max-width:54ch;margin:20px auto 0;font-size:clamp(16px,1.6vw,19px)}
 .hero .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
@@ -298,7 +303,7 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
 
 <header class="top">
   <div class="wrap">
-    <a href="#inicio" class="brand" aria-label="R27 Details, inicio"></a>
+    <a href="#inicio" class="brand" aria-label="R27 Details, inicio"><img src="logo.png" alt="" width="709" height="268"></a>
     <nav aria-label="Principal">
       <a href="#raul">Quién soy</a>
       <a href="#servicios">Servicios y precios</a>
@@ -314,7 +319,7 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
 <main id="main">
 <section class="hero night" id="inicio">
   <div class="wrap">
-    <div class="mark" role="img" aria-label="R27 Details"></div>
+    <div class="mark"><img src="logo.png" alt="R27 Details" width="709" height="268"></div>
     <h1>Llevo el detailing hasta la puerta de tu casa</h1>
     <p class="lead">Faros, motor, interior y cristales tratados a mano en Murcia, Molina de Segura y alrededores. Tú sigues con tu día y tu coche vuelve a nivel concesionario.</p>
     <div class="ctas">
@@ -362,7 +367,7 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
 
     <ul class="svc-list">
       <li class="svc">
-        <figure><img src="assets/img/faros.jpg" alt="Faro de coche: mitad amarillenta antes del pulido y mitad transparente después" loading="lazy" width="334" height="226"></figure>
+        <figure><img src="faros.jpg" alt="Faro de coche: mitad amarillenta antes del pulido y mitad transparente después" loading="lazy" width="334" height="226"></figure>
         <div>
           <h3>Pulido de faros</h3>
           <p class="ideal">Ideal si tus faros están amarillentos u opacos, o vas a pasar la ITV.</p>
@@ -376,7 +381,7 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
       </li>
 
       <li class="svc">
-        <figure><img src="assets/img/motor.jpg" alt="Vano motor limpio y con plásticos acondicionados" loading="lazy" width="334" height="228"></figure>
+        <figure><img src="motor.jpg" alt="Vano motor limpio y con plásticos acondicionados" loading="lazy" width="334" height="228"></figure>
         <div>
           <h3>Limpieza de motor + protective layer</h3>
           <p class="ideal">Ideal si el motor acumula grasa y polvo y quieres verlo como nuevo.</p>
@@ -390,7 +395,7 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
       </li>
 
       <li class="svc">
-        <figure><img src="assets/img/interior.jpg" alt="Interior de coche con salpicadero y asientos de cuero limpios" loading="lazy" width="334" height="265"></figure>
+        <figure><img src="interior.jpg" alt="Interior de coche con salpicadero y asientos de cuero limpios" loading="lazy" width="334" height="265"></figure>
         <div>
           <h3>R27 Interior</h3>
           <p class="ideal">Ideal para devolver el interior al nivel de concesionario.</p>
@@ -408,7 +413,7 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
       </li>
 
       <li class="svc">
-        <figure><img src="assets/img/cristales.jpg" alt="Gotas de agua resbalando sobre un cristal tratado" loading="lazy" width="328" height="124"></figure>
+        <figure><img src="cristales.jpg" alt="Gotas de agua resbalando sobre un cristal tratado" loading="lazy" width="328" height="124"></figure>
         <div>
           <h3>Tratamiento hidrofóbico de cristales</h3>
           <p class="ideal">Ideal si conduces a menudo con lluvia o de noche.</p>
@@ -423,7 +428,7 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
       </li>
 
       <li class="svc">
-        <figure><img src="assets/img/cuero.jpg" alt="Asiento de cuero perforado en detalle" loading="lazy" width="328" height="110"></figure>
+        <figure><img src="cuero.jpg" alt="Asiento de cuero perforado en detalle" loading="lazy" width="328" height="110"></figure>
         <div>
           <h3>Tratamiento cerámico de cuero / piel</h3>
           <p class="ideal">Ideal para conservar como nuevos los asientos de cuero o piel.</p>
@@ -499,8 +504,8 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
       <p>Los coches que salen de mis manos están en Instagram. Échales un vistazo antes de pedir cita.</p>
       <a class="btn ghost" href="https://www.instagram.com/r27details/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg> Ver @r27details</a>
     </div>
-    <figure><img src="assets/img/faros.jpg" alt="Pulido de faros" loading="lazy"></figure>
-    <figure><img src="assets/img/interior.jpg" alt="Interior tras la limpieza" loading="lazy"></figure>
+    <figure><img src="faros.jpg" alt="Pulido de faros" loading="lazy"></figure>
+    <figure><img src="interior.jpg" alt="Interior tras la limpieza" loading="lazy"></figure>
   </div>
 </section>
 
@@ -536,7 +541,7 @@ footer .legal nav{display:flex;gap:20px;flex-wrap:wrap}
 <footer class="night">
   <div class="wrap">
     <div class="cols">
-      <div><span class="brand" role="img" aria-label="R27 Details"></span><p style="margin-top:16px;max-width:30ch">Detailing profesional a domicilio en Murcia, Molina de Segura y alrededores.</p></div>
+      <div><span class="brand"><img src="logo.png" alt="R27 Details" width="709" height="268"></span><p style="margin-top:16px;max-width:30ch">Detailing profesional a domicilio en Murcia, Molina de Segura y alrededores.</p></div>
       <div><h4>Contacto</h4><ul><li><a href="#" data-ig="general">Mensaje por Instagram</a></li><li><a href="tel:+34722540936">722 54 09 36</a></li><li><a href="https://www.instagram.com/r27details/" target="_blank" rel="noopener">@r27details</a></li></ul></div>
       <div><h4>Horario</h4><p>7 días a la semana<br>Con cita previa</p></div>
       <div><h4>Zona</h4><p>Murcia, Molina de Segura<br>y alrededores</p></div>
